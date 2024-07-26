@@ -1,0 +1,83 @@
+/* Reset general: Eliminara los márgenes y el relleno predeterminados de todos los elementos
+ y establece el modelo de caja para que el ancho y el alto incluyan el padding y el borde */
+* {
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+    margin: 0; /* Elimina el margen predeterminado de todos los elementos */
+    padding: 0; /* Elimina el padding predeterminado de todos los elementos */
+}
+
+/* Estilo del cuerpo: Define el estilo general del cuerpo de la página */
+body {
+    background: #c1bdbd; /* Establece un color de fondo gris claro para todo el cuerpo de la página */
+}
+
+/* Encabezado y navegación: Estilos para el encabezado y la barra de navegación principal */
+header .nav-principal {
+    background: #122194bb; /* Color de fondo azul oscuro semi-transparente para la barra de navegación */
+    overflow: hidden; /* Evita que el contenido desborde el contenedor */
+}
+
+header .nav-principal ul {
+    list-style: none; /* Elimina los puntos de lista predeterminados de los elementos de lista */
+}
+
+header .nav-principal ul li {
+    padding: 10px 20px; /* Añade espacio interno de 10px arriba y abajo, y 20px a los lados de cada ítem de la lista */
+    display: block; /* Hace que cada ítem de la lista ocupe toda la línea */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    float: left; /* Alinea los ítems de la lista horizontalmente a la izquierda */
+}
+
+header .nav-principal ul li a {
+    color: #fff; /* Establece el color del texto de los enlaces en blanco */
+}
+
+/* Sección principal: Estilos para la sección principal de la página que contiene los artículos y la barra lateral */
+.mainPrincipal {
+    display: flex; /* Utiliza el modelo de caja flexible para alinear los elementos hijos */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos con espacio igual entre ellos */
+    flex-wrap: wrap; /* Permite que los elementos hijos se envuelvan en varias líneas si es necesario */
+    margin-bottom: 20px; /* Añade un espacio de 20px en la parte inferior de la sección principal */
+}
+
+/* Contenedor de artículos: Estilos para el contenedor principal de los artículos */
+.mainPrincipal .principal {
+    width: 70%; /* Establece el ancho del contenedor principal al 70% del contenedor padre */
+    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido */
+    border-radius: 5px; /* Redondea las esquinas del contenedor con un radio de 5px */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+}
+
+/* Artículos: Estilos para los artículos dentro del contenedor principal */
+.principal article {
+    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido del artículo */
+    background-color: #f9f9f9; /* Establece un color de fondo gris claro para distinguir los artículos del contenedor */
+    border-radius: 5px; /* Redondea las esquinas del artículo con un radio de 5px */
+    margin-bottom: 20px; /* Añade un espacio de 20px en la parte inferior de cada artículo para separar los artículos */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+    border: 1px solid #ddd; /* Añade un borde gris claro alrededor del artículo para separarlo visualmente */
+}
+
+/* Barra lateral: Estilos para la barra lateral dentro de la sección principal */
+.mainPrincipal aside {
+    width: 28%; /* Establece el ancho de la barra lateral al 28% del contenedor padre */
+    padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido de la barra lateral */
+    border-radius: 5px; /* Redondea las esquinas de la barra lateral con un radio de 5px */
+    background-color: orange; /* Establece un color de fondo naranja para la barra lateral */
+    box-sizing: border-box; /* Incluye el padding y el borde en el ancho y alto total del elemento */
+}
+
+/* Estructura general: Estilos para el encabezado, la sección principal y el pie de página */
+header, .mainPrincipal, footer {
+    width: 90%; /* Establece el ancho de estos elementos al 90% del contenedor padre */
+    max-width: 1000px; /* Establece un ancho máximo de 1000px para evitar que el elemento se expanda demasiado */
+    margin: 20px auto; /* Añade un espacio de 20px arriba y abajo y centra el elemento horizontalmente */
+}
+
+footer {
+    margin-top: 20px; /* Añade un espacio de 20px en la parte superior del pie de página */
+    background: #000; /* Establece un color de fondo negro para el pie de página */
+    border-radius: 5px; /* Redondea las esquinas del pie de página con un radio de 5px */
+    color: white; /* Establece el color del texto en blanco */
+    text-align: center; /* Centra el texto dentro del pie de página */
+}
